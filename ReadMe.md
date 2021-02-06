@@ -1,5 +1,5 @@
 # wiki.py
-###### is the best for searching wikipedia
+#### is the best for searching wikipedia
 ###### -its INTERACTIVE
 ###### -with PROGRESS BAR
 ###### --full funtional progress bar implemented usning class and appropriate methods , universal, can be applied on any code
@@ -20,4 +20,4 @@ python wiki.py
 
 
 # wiki.bash 
-###### is a bash file for getting wikipedia url
+#### is a bash file for getting wikipedia url
