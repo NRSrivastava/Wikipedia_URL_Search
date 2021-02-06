@@ -16,20 +16,26 @@ if missing:
         print("=================================================================================\nDependencies installed\n=================================================================================")
     except:
         print("=================================================================================\nDependencies could not be installed.\nCheck your system is connected to Internet and pip is installed on your system.\n=================================================================================")
+        input("Press Enter to continue...")
         sys.exit()
 
 import wikipedia
     
 def wikiSearch(terms):
+    if(len(terms)==0):
+        print("Nothing Entered.")
+        input("Press Enter to continue...")
+        sys.exit()
     print("Searching wikipedia for", terms)
     p=progressBar(3)
-
+    p.update(0)
     searchResults = wikipedia.search(terms,results=20,suggestion=True)
     p.addOne()
 
     if searchResults is None or len(searchResults[0])<1:
         p.updateComplete()
         print("Ambiguous search text.\nRetry with a more specific terms.")
+        input("Press Enter to continue...")
         sys.exit()
     p.addOne()
     #print(searchResults)
@@ -49,7 +55,8 @@ def wikiSearch(terms):
     with open("wiki_search_log.txt", 'a') as logfile:
         logfile.write(searchUrl + "\n")
         logfile.close()
-    sys.exit(0)
+    input("Press Enter to continue...")
+    sys.exit()
 
 class progressBar:
     def __init__(self,total, prefix = 'Progress:', suffix = 'Complete', decimals = 1, length = 50, fill = '█', printEnd = "\r"):
@@ -85,3 +92,5 @@ if __name__ == '__main__':
         search_keyword = search_key.join(sys.argv[1:])
 
     wikiSearch(search_keyword)
+
+input("Press Enter to continue...")
