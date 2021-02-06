@@ -1,21 +1,23 @@
-wiki.py is the best for searching wikipedia
--its INTERACTIVE
--with PROGRESS BAR
---full funtional progress bar implemented usning class and appropriate methods , universal, can be applied on any code
+# wiki.py
+###### is the best for searching wikipedia
+###### -its INTERACTIVE
+###### -with PROGRESS BAR
+###### --full funtional progress bar implemented usning class and appropriate methods , universal, can be applied on any code
 
-Requirements:
+###### Requirements:
 Python and pip should be installed
 
-Running  on terminal:
--cd to the directory where wiki.py is located.
--Run below commands:
+#### Running  on terminal:
+###### cd to the directory where wiki.py is located.
+###### Run below commands:
 
 python wiki.py <-Seach terms here->
 
--OR
+###### OR
 
 python wiki.py
 
 
 
-wiki.bash is a bash file for getting wikipedia url
+# wiki.bash 
+###### is a bash file for getting wikipedia url
